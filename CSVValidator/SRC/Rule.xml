@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Datei mit Regel um eine CSV- Datei zu prüfen.
+ -->
+<Rule>
+	<Table> 
+		<Head>0</Head>
+		<Size>
+			<Column error="fatal">9</Column>
+			<Row max="5" min="5" error="fatal"/>
+		</Size>
+		<Column id="0" empty="no" error="fatal">text</Column>
+		<Column id="1" empty="yes">text</Column>
+		<Column id="2" >text</Column>
+		<Column id="3">number</Column>
+		<Column id="4" error="warning">date</Column>
+		<!--Column id="5" error="warning">text</Column-->
+		<Column id="6" match="^[0-9]{5}$"/> <!-- RegEx -->
+		<Column id="7" error="valid">text</Column>
+		<Column id="8" error="fatal">decimal</Column>
+	</Table>
+	<Values>
+		<Value compare="eq" error="fatal">
+			<Cell row="1" column="2"/>
+			<Cell>Herr</Cell>
+		</Value>
+		<Value compare="lt" error="fatal">
+			<Cell row="2" column="3"/>
+			<Cell row="1" column="3"/>
+		</Value>
+		<Value compare="gt" error="fatal">
+			<Cell row="4" name="Geburtstag"/>
+			<Cell row="3" column="4"/>
+		</Value>
+		<Value compare="ne" error="fatal">
+			<Cell row="1" name="Name"/>
+			<Cell row="2" name="Name"/>
+		</Value>
+		<Value compare="eq" error="fatal">
+			<Cell row="3" name="Gehalt"/>
+			<Cell row="4" name="Gehalt"/>
+		</Value>
+		<Value compare="le" error="fatal">
+			<Cell row="3" name="Ort"/>
+			<Cell row="4" name="Ort"/>
+		</Value>
+		<Value compare="ge" error="fatal">
+			<Cell row="3" name="Alter"/>
+			<Cell>32</Cell>
+		</Value>
+	</Values>
+</Rule>

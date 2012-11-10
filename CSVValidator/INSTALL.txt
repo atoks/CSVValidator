@@ -1,0 +1,90 @@
+﻿CSV Validator ist eine JAVA-Bibliothek die mit JAVA 1.5 geschrieben ist.
+
+CSV Validator verwendet folgende JAVA-Bibliotheken:
+
+####################################################################
+
+CSVCellValue
+	java.text.ParseException
+	java.text.SimpleDateFormat
+	java.util.Date
+	
+CSVReader
+	java.io.BufferedReader
+	java.io.File
+	java.io.FileInputStream
+	java.io.FileNotFoundException
+	java.io.IOException
+	java.io.InputStream
+	java.io.InputStreamReader
+	java.util.regex.Matcher
+	java.util.regex.Pattern
+
+CSVRow
+	java.util.Vector
+	
+CSVRules
+	java.util.Vector
+	javax.xml.xpath.XPathExpressionException
+	org.w3c.dom.NamedNodeMap
+	org.w3c.dom.Node
+	org.w3c.dom.NodeList
+	
+CSVRulesReader
+	java.io.File
+	java.io.InputStream
+	javax.xml.parsers.DocumentBuilder
+	javax.xml.parsers.DocumentBuilderFactory
+	javax.xml.parsers.ParserConfigurationException
+	javax.xml.xpath.XPath
+	javax.xml.xpath.XPathConstants
+	javax.xml.xpath.XPathExpression
+	javax.xml.xpath.XPathExpressionException
+	javax.xml.xpath.XPathFactory
+	org.w3c.dom.Document
+	org.w3c.dom.NodeList
+	
+CSVTable
+	java.util.Vector
+	
+CSVValidator
+	java.util.Vector
+	
+####################################################################
+
+Inhalt von CSV Validator Bibliothek:
+
+CSVValidator
+|
++-- Exceptions
+|	|-- CSVRuleException.java
+|	|-- CSVTableSizeException.java
++-- Rules
+|	|-- ColumnRule.java
+|	|-- HeadRule.java
+|	|-- TableSizeRule.java
+|	|-- ValueRule.java
+|-- CellInfo.java
+|-- CSVCellValue.java
+|-- CSVReader.java
+|-- CSVRow.java
+|-- CSVRules.java
+|-- CSVRulesReader.java
+|-- CSVTable.java
+|-- CSVValidator.java
+
+Um diese Bibliothek in eigene Projekte zu installieren, 
+muss einfach Verzeichnis „SRC/CSVValidator“ in Ihr Project kopiert werden und 
+in JAVA-Projekt mit import CSVValidator; importiert.
+Oder verwenden Sie CSVValidator.jar.
+Wie werden JAR-Dateien in Projekte eingebunden, 
+kann hier: http://www.javabeginners.de/Grundlagen/Bibliothek_einbinden.php nachgeschlagen werden. 
+
+Zum Starten vom Beispielprojekt erstellen Sie ein leeres Project und kopieren Sie in neues Projekt 
+gesamten Inhalt vom Verzeichnis „SRC“.
+
+Für genaue Bibliothekbeschreibung schlagen Sie JAVA-Doc-API im Verzeichnis „doc“ nach.
+
+Wenn Sie weitere Fragen haben, 
+kontaktieren Sie mich bitte unter: http://atoks.bplaced.net/index.php?action=contact
+

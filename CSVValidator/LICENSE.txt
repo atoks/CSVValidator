@@ -1,0 +1,2 @@
+﻿Alle im Repository enthaltenen Daten werden unter Lizenz 
+GNU General Public License Version 2 (GPL-2.0) veröffentlicht.
